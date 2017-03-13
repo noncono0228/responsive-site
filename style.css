@@ -1,0 +1,170 @@
+@charset 'UTF-8';
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    background-color: WHITE;
+}
+
+a
+{
+    text-decoration: none;
+    color: #14c0c9;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center
+{
+    text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+.block-center,
+section .container,
+
+/*--header--------------------------------*/
+
+html,body
+{ 
+    margin:0;
+    padding:0;
+    
+}
+header
+ {
+    background-image: url(image/kosumosu.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*-----------------------------------------------------*/
+section
+{
+    padding: 60px 0;
+}
+section .container
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+section h2
+{
+    font-size: 32px;
+    font-size: 3.2rem;
+}
+
+#skills
+{
+    background-color:  #F7C9CE;
+}
+#skills .container 
+{
+    display: -webkit-flex;
+    display:         flex;
+    justify-content: space-between;
+  　flex-direction: row;
+  　text-align: center;
+  　
+    
+}
+
+#skills h2
+{
+    margin-bottom: 60px;
+
+    color: #F8ACACF;
+}
+#skills .skill-box
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       　　　box-sizing: border-box;
+           
+    width: 32%;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+   
+    
+    background-color: WHITE;
+}
+
+.skill-box
+{
+   text-align: center;
+}
+
+#good .goodbottun
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       　　　box-sizing: border-box;
+           
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+            
+    background-color: #7cbac1;
+    
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+ .goodbottun p
+ { color: WHITE;
+   padding: 10px;
+ }
+ 
+ #good
+ {background-color: #fdfcf6}
+ 
+ .flexible-images {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+header
+ {
+  background-image: url(image/kosumosu.jpg);
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+  .container {
+    flex-direction: column;
+    width: 90%;
+    margin: 10px;
+    text-align: center;
+  }
+  #skills .skill-box{
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+}
